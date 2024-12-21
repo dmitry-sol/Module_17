@@ -1,7 +1,6 @@
 from fastapi import FastAPI
 from app.routers import user, task
 
-
 api = FastAPI()
 
 api.include_router(user.router)
@@ -13,4 +12,6 @@ async def root():
 
 
 
-# uvicorn app.main:api --reload
+# pipreqs
+# python -m uvicorn app.main:api --reload
+
