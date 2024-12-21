@@ -12,5 +12,4 @@ class User(Base):
     age = Column(Integer)
     slug = Column(String, unique=True, index=True)
 
-    # Связь с моделью Task
     tasks = relationship("Task", back_populates="user")
